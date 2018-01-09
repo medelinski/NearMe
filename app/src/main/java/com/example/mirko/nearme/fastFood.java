@@ -29,7 +29,7 @@ public class fastFood extends AppCompatActivity {
         Direction3 = (Button)findViewById(R.id.btnDirections3);
 
         final ListView lv = (ListView) findViewById(R.id.lstFastFood);
-        spots = new String[]{"Chicago","Bulls eye bar and grill", "Pub on king", "Passion flavor","McMullans","Beertown","McCabes","Stampede"};
+        spots = new String[]{"A&W","KFC", "Taco Bell", "Tim Hortons","Subway","Popeyes","Pizza Hut","Pizza Roma"};
         final List<String> MyList1 = new ArrayList<String>(Arrays.asList(spots));
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, MyList1);
         lv.setAdapter(arrayAdapter);

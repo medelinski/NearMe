@@ -31,7 +31,7 @@ public class Mall extends AppCompatActivity {
         Direction = (Button)findViewById(R.id.btnDirections4);
 
         final ListView lv = (ListView) findViewById(R.id.lstMall);
-        spots = new String[]{"Moxies","Boston Pizza", "Kelseys", "Omega","Mels Diner","Chicagos","The Berlin","Charcoal Steak house"};
+        spots = new String[]{"Fairview Park Mall","Conestoga Mall", "Sunrise Shopping Centre","Highland Hills Mall","Stanley Park Mall","Square One","Eaton Centre","Vaughn Mills"};
         final List<String> MyList1 = new ArrayList<String>(Arrays.asList(spots));
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, MyList1);
         lv.setAdapter(arrayAdapter);

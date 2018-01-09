@@ -17,8 +17,8 @@ import java.util.List;
 
 public class Bar extends AppCompatActivity {
 
-    private String [] spots1;
-    private Button Direction2;
+    private String[] spots;
+    private Button Direction;
     private LocationManager locationManager;
     private LocationListener listener;
 
@@ -28,15 +28,15 @@ public class Bar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bar);
 
-        Direction2 = (Button)findViewById(R.id.btnDirections2);
+        Direction = (Button) findViewById(R.id.btnDirections1);
 
         final ListView lv = (ListView) findViewById(R.id.lstBar);
-        spots1 = new String[]{"Chicago","Bulls eye bar and grill", "Pub on king", "Passion flavor","McMullans","Beertown","McCabes","Stampede"};
-        final List<String> MyList1 = new ArrayList<String>(Arrays.asList(spots1));
+        spots = new String[]{"Chicagos", "McCabes", "Pub on King", "Stampede", "Chainsaw", "Stark & Perris", "Hacks", "Beertown"};
+        final List<String> MyList1 = new ArrayList<String>(Arrays.asList(spots));
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, MyList1);
         lv.setAdapter(arrayAdapter);
 
-        Direction2.setOnClickListener(new View.OnClickListener() {
+        Direction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

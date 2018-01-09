@@ -16,6 +16,7 @@ public class Search extends AppCompatActivity {
     private Button Mall;
     private Button Bar;
     private Button Direction;
+    private Button Other;
 
 
     @Override
@@ -27,6 +28,7 @@ public class Search extends AppCompatActivity {
         FastFood = (Button)findViewById(R.id.btnFastFood);
         Mall = (Button)findViewById(R.id.btnMall);
         Bar = (Button)findViewById(R.id.btnBar);
+        Other = (Button)findViewById(R.id.btnOther);
 
 
         Restaurant.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +59,14 @@ public class Search extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent (Search.this,Mall.class);
                 startActivity(intent);
+            }
+        });
+        Other.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri webpage = Uri.parse("https://www.yelp.ca/kitchener-on-ca");
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(webIntent);
             }
         });
 

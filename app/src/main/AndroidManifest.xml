@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Search" />
-        <activity android:name=".Bar" />
         <activity android:name=".Restaurant" />
         <activity android:name=".fastFood" />
-        <activity android:name=".Mall"></activity>
+        <activity android:name=".Mall" />
+        <activity android:name=".Bar"></activity>
     </application>
 
 </manifest>
